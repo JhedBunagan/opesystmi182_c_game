@@ -3,7 +3,7 @@
 
 CC = gcc      
 
-LDLIBS=-lncurses -lconio -lwindows
+LDLIBS=-lncurses 
 
 SRCS := $(wildcard *.c)
 BINS := $(SRCS:%.c=%)

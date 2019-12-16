@@ -1,5 +1,4 @@
 #include <ncurses.h>
-#include <studio.h>
 #include "tictactoe.h"
 
 void initCurses() {

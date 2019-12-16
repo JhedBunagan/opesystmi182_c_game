@@ -1,3 +1,20 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@JhedBunagan 
+1
+00JhedBunagan/opesystmi182_c_game
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+opesystmi182_c_game/pracTicToe.c
+ Jhed Ross Steven Bunagan dec16
+aaac27e 1 hour ago
+112 lines (105 sloc)  2.87 KB
+  
 #include<stdio.h>
 
 #include<stdlib.h>
@@ -19,7 +36,7 @@ initscr();
     again:
 	run();
 	mvaddstr(1, 33, "\nIf You Want To Play Again Press 1: \nElse Any:");
-	scanf("%s",&reStart);
+	getch("%s",&reStart);
 	if(reStart == '1')
         {
             system("cls");
@@ -76,7 +93,7 @@ struct myDataType inputValue(char sym[9],int count){
     }else{
         mvaddstr(8, 33, "\nEnter Your Choice O:");
     }
-    scanf("%s",&value);
+    getch("%s",&value);
     for(i=0;i<9;i++){
 
         if(value == sym[i]){
@@ -110,3 +127,4 @@ void Display(char sym[9]){
 	mvaddstr(18, 33, "\n\t\t\t   %c   |   %c   |   %c   ",sym[6],sym[7],sym[8]);
 	mvaddstr(19, 33, "\n\t\t\t       |       |       ");
 }
+©
